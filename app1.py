@@ -13,13 +13,13 @@ load_dotenv()
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 # AWS S3 Configuration
-aws_access_key = "AKIA4YUIBKK5PFVX2VMA"
-aws_secret_key = "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"
-bucket_name = "maths1yt"
+aws_access_key = ""
+aws_secret_key = ""
+bucket_name = ""
 s3 = boto3.client("s3", aws_access_key_id=aws_access_key, aws_secret_access_key=aws_secret_key)
 
 # Set Hugging Face Token
-os.environ['HF_TOKEN'] = "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"
+os.environ['HF_TOKEN'] = ""
 
 prompt = """You are Yotube video summarizer. You will be taking the transcript text
 and summarizing the entire video and providing the important summary in points
